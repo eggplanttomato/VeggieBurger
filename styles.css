@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: Montserrat;
+}
+
+body {
+  background: url("https://assets.codepen.io/6060109/ZigZag.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choosePanel, .confirmPanel, .deliverPanel {
+  background-color: white;
+  width: 350px;
+  height: 650px;
+  margin: 70px 5px;
+  box-shadow: 0 40px 40px -20px #3C7B61;
+  border-radius: 5px;
+}
+
+.closeIcon {
+  text-align: right;
+  padding: 15px;
+}
+
+.confirm {
+  text-align: center;
+  padding: 0 8%;
+}
+
+.confirm>img {
+  width: 150px;
+  height 135.52px;
+}
+
+.confirm>h2 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #2F463D;
+  margin: 8% 0 0 0;
+  height: 50px;
+}
+
+.confirm>p {
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #828282;
+}
+
+.choose p {
+  margin-top: 30px;
+}
+
+.foodSelection {
+  display: flex;
+  align-items: center;
+  margin: 30px auto 30px;
+  background-color: #F0FFF5;
+  width: 84%;
+  border-radius: 5px;
+}
+
+.priceBox {
+  width: 50%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.priceBox p:nth-of-type(1) {
+  color: #2F463D;
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.priceBox p:nth-of-type(2) {
+  color: #7A8F85;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.changeBox>a {
+  color: #467A66;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.btn-primary {
+  height: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-weight: 800;
+  font-size: 15px;
+  font-family: Montserrat;
+  background-color: #46A67E !important;
+  margin-bottom: 30px;
+}
+
+.btn1, .btn3 {
+  background-color: #BDBDBD !important;
+  margin-top: 60px;
+}
+
+.allDots {
+  text-align: center;
+}
+
+.sideDots {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.greenDot {
+  background-color: #67BD99;
+}
+
+.choosePanel, .deliverPanel {
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .choosePanel, .deliverPanel {
+    display: block;
+  }
+
+  .confirmPanel {
+    z-index: 1;
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+  }
